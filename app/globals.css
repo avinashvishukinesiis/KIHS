@@ -5,7 +5,26 @@
   --foreground: #171717;
 }
 
-@theme inline {
+@theme{
+  --color-primary1: #3E77B9;
+  --color-primary2: #75B8EE;
+  --color-secondary1: #FBD115;
+  --color-secondaryTint: #FFE6B6;
+  --color-customGrey: #5D5D5D;
+  --color-outlineGrey: #F7F7F7;
+  --color-ligthGrey: #E1E1E1;
+  --color-textGrey: #5D5D5D;
+  --color-bgBlue: #E7F3FE;
+  --color-alert1 : #D90505;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -19,8 +38,17 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+ */
+
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
