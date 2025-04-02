@@ -3,6 +3,8 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "@/Components/NavBar/NavBar";
 import { Footer } from "@/Components/Footer/Footer";
+import MotionWrapper from "@/Components/MotionWrapper";
+
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -16,17 +18,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
-
   return (
     <html lang="en">
       <body className={`${poppins.className} scrollbar-hide`}>
         <Navbar />
         <main className="h-max mt-[136px] box-border">
-          {children}
+          <MotionWrapper>{children}</MotionWrapper>
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
