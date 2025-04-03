@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} scrollbar-hide`}>
         <Navbar />
-        <main className="h-max mt-[136px] box-border">
+        <main className="h-max min-h-[200px] md:min-h-[500px] mt-[136px] box-border">
           <MotionWrapper>{children}</MotionWrapper>
         </main>
         <Footer />

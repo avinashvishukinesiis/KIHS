@@ -1,4 +1,3 @@
-'use client'
 import { ContactUsSection1 } from '@/Components/ContactUs/ContactUsSection1/ContactUsSection1'
 import { ContactUsSection2 } from '@/Components/ContactUs/ContactUsSection2/ContactUsSection2'
 import { ContactUsSection3 } from '@/Components/ContactUs/ContactUsSection3/ContactUsSection3'
@@ -11,7 +10,7 @@ import React from 'react'
 
 export default function page(){
   return (
-    <>
+    <main>
       <ContactUsSection1/>
       <ContactUsSection2/>
       <ContactUsSection3/>
@@ -20,6 +19,6 @@ export default function page(){
       <ContactUsSection6/>
       <ContactUsSection7/>
       <ContactUsSection8/>
-    </>
+    </main>
   )
 }

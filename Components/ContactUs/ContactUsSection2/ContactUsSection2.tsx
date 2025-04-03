@@ -1,4 +1,5 @@
-import Image from 'next/image'
+
+// import Image from 'next/image'
 import React from 'react'
 import { PiSirenThin } from "react-icons/pi";
 
@@ -80,38 +81,20 @@ export const ContactUsSection2 = () => {
                         <div className="rounded-lg overflow-hidden h-64 md:h-full w-full relative">
                             <div className="absolute inset-0 bg-gray-200">
                                 {/* This would be replaced with an actual map component */}
-                                <div className="w-full h-full relative">
-                                    <Image
-                                        src="/api/placeholder/600/400"
-                                        alt="Location Map"
-                                        layout="fill"
-                                        className="object-cover"
-                                    />
-                                    {/* Red pin marker */}
-                                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                        <div className="h-6 w-6 bg-red-500 rounded-full flex items-center justify-center text-white">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
+                                <iframe
+                                    width="100%"
+                                    height="256"
+                                    frameBorder="0"
+                                    scrolling="no"
+                                    marginHeight={0}
+                                    marginWidth={0}
+                                    src="https://maps.google.com/maps?width=100%25&amp;height=256&amp;hl=en&amp;q=1%20Grafton%20Street,%20'C'%20Road,%20Raghunandan%20Colony,%20Vishrambag,%20Sangli%20%E2%80%93%20416415.Dublin,%20Ireland+(My%20BusinKULLOLLI%20HOSPITALess%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                    allowFullScreen
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
-
-                {/* Desktop only - Institute description */}
-                {/* <div className="hidden md:block mt-8">
-                    <h3 className="font-semibold text-lg mb-2">Welcome to the Kullolli Institute of Health Services</h3>
-                    <p className="text-gray-700">
-                        A cornerstone of quality and affordable healthcare in Sangli. After serving 17 years as a Class I Government Medical Superintendent, Dr. Kullolli took voluntary retirement in 1996 to dedicate himself fully to his vision of accessible healthcare for all.
-                    </p>
-                    <p className="text-gray-700 mt-2">
-                        What started as a small initiative has grown step by step into a state-of-the-art healthcare institution. Today, we proudly carry a trusted name in the region, delivering advanced medical care with compassion and integrity.
-                    </p>
-                </div> */}
             </div>
         </section>
     )

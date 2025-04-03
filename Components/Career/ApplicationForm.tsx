@@ -50,7 +50,7 @@ const ApplicationForm = () => {
     };
 
     return (
-        <div className="max-w-5xl mx-auto p-6">
+        <div className="w-full mx-auto px-4 md:px-28 py-8">
             <div className="mb-6">
                 <p className="text-primary2 text-[14px] font-medium mb-1">Quick Application</p>
                 <h1 className="text-3xl font-bold text-gray-900">Apply Now</h1>

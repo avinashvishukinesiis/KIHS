@@ -19,14 +19,14 @@ export default function Navbar() {
     const upperNavLink = [
         { href: "/social-responsibility", label: "Social Responsibility (CSR)" },
         { href: "/career", label: "Careers With Us" },
-        { href: "/faq", label: "FAQ" },
+        { href: "/frequantly-asked-questions", label: "FAQ" },
     ]
 
     const navLinks = [
         { href: "/", label: "" },
         { href: "/about", label: "About Us" },
         { href: "/services", label: "Medical Services" },
-        { href: "/visitors", label: "Patients & Visitors" },
+        { href: "/patients-and-visitors", label: "Patients & Visitors" },
         { href: "/dr-dept", label: "Doctors & Dept" },
         { href: "/career", label: "Career Opportunities" },
     ]
@@ -76,7 +76,7 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    <Link href={"/contactUs"} className="px-3 py-1 bg-inherit flex gap-1 items-center justify-center border-[2px] border-solid border-primary1 rounded-full cursor-pointer transition-all duration-300 hover:bg-primary1 hover:text-white hover:shadow-lg">
+                    <Link href={"/contact-us"} className="px-3 py-1 bg-inherit flex gap-1 items-center justify-center border-[2px] border-solid border-primary1 rounded-full cursor-pointer transition-all duration-300 hover:bg-primary1 hover:text-white hover:shadow-lg">
                         <span className="font-medium text-[16px]">Contact Us</span>
                         <ArrowDownRight size={24} />
                     </Link>
