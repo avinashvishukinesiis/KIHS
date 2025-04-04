@@ -4,7 +4,7 @@ export const StateOfTheArtHealthcare = () => {
 
   return (
     <>
-      <section className='flex flex-row-reverse justify-around w-full md:px-24 lg:px-32 gap-12 mt-16'>
+      <section className='flex flex-col md:flex-row-reverse justify-around w-full px-4 md:px-24 lg:px-32 gap-12 mt-16'>
         <div className='relative'>
 
           <img src='/about_hero.png' className='w-[100%] h-[500px] rounded-2xl' alt='KIHS building' />
@@ -36,7 +36,7 @@ export const StateOfTheArtHealthcare = () => {
           </div>
         </div>
       </section>
-      <section className='flex justify-around w-full md:px-24 lg:px-32 gap-12 pb-24'>
+      <section className='flex flex-col md:flex-row justify-around w-full px-4 md:px-24 lg:px-32 gap-12 pb-24'>
         <div className='relative'>
 
           <img src='/about_hero.png' className='w-[100%] h-[500px] rounded-2xl' alt='KIHS building' />

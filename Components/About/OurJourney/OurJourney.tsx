@@ -8,9 +8,9 @@ export const OurJourney = () => {
 
   return (
     <>
-      <section className='flex justify-around w-full mt-16 md:px-24 lg:px-32 gap-12 pb-24'>
+      <section className='flex flex-col md:flex-row justify-around w-full mt-16 p-4 md:px-24 lg:px-32 gap-12 pb-24'>
         <div className='relative'>
-          <img src="/nabh.png" className='w-[100px] h-[100px] -top-[50px] left-10 absolute' alt="NABH Logo" />
+          <img src="/nabh.png" className='hidden md:block w-[100px] h-[100px] -top-[50px] left-10 absolute' alt="NABH Logo" />
           <img src='/about_hero.png' className='w-[100%] h-[500px] rounded-2xl' alt='KIHS building' />
           <div className='absolute bottom-0 w-[100%] min-h-[100px] rounded-lg bg-white shadow-2xl flex justify-around items-center'>
             <div className='flex flex-col'>

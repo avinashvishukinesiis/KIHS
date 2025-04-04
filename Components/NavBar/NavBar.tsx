@@ -25,7 +25,7 @@ export default function Navbar() {
     const navLinks = [
         { href: "/", label: "" },
         { href: "/about", label: "About Us" },
-        { href: "/services", label: "Medical Services" },
+        { href: "/medical-services", label: "Medical Services" },
         { href: "/patients-and-visitors", label: "Patients & Visitors" },
         { href: "/dr-dept", label: "Doctors & Dept" },
         { href: "/career", label: "Career Opportunities" },

@@ -25,12 +25,12 @@ export const CareerSection2 = () => {
     ];
 
     return (
-        <section className='w-full flex flex-col gap-8 md:px-24 lg:px-32'>
+        <section className='w-full flex flex-col gap-8 px-4 md:px-24 lg:px-32'>
             <div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-4">Why Choose a Career with Us?</h2>
             </div>
             <div>
-                <div className='grid grid-cols-2 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     {contentItem.map(({ title, description }, index) => {
                         return (
                             <button key={index} className="flex items-center justify-between px-4 py-2 bg-white border-[2px] border-ligthGrey rounded-lg cursor-pointer transition-all duration-300 hover:bg-gray-200">

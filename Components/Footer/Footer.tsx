@@ -26,7 +26,7 @@ export const Footer = () => {
         },
         {
             label: "Services",
-            url: "/services"
+            url: "/medical-services"
         },
         {
             label: "About Us",
@@ -42,7 +42,7 @@ export const Footer = () => {
         },
         {
             label: "Contact Us",
-            url: "/contact"
+            url: "/contact-us"
         },
     ]
 

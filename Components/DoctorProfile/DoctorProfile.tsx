@@ -24,13 +24,13 @@ export const DoctorProfile: React.FC<DoctorProfileProps> = ({
     socialLinks,
 }) => {
     return (
-        <div className="w-full flex flex-col items-center md:flex-row bg-white text-black p-6 gap-16">
+        <div className="w-full flex flex-col items-center md:flex-row bg-white text-black md:p-6 gap-16">
             <img
                 src={imageSrc}
                 alt={name}
-                className="w-40 h-40 md:w-80 md:h-80 rounded-lg"
+                className="w-full md:w-80 md:h-80 rounded-lg"
             />
-            <div className="pr-28">
+            <div className="md:pr-28">
                 <h2 className="text-xl font-semibold">{name}</h2>
                 <p className="text-sm">{title}</p>
                 <p className="mt-2 text-customGrey text-sm">{description}</p>

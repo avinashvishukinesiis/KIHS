@@ -74,22 +74,22 @@ export const Leadership = () => {
     ];
   return (
     <>
-      <section className='w-full flex flex-col gap-8 md:px-24 lg:px-32'>
+      <section className='w-full flex flex-col gap-8 px-4 md:px-24 lg:px-32'>
         <div className="w-full">
           <p className="text-sm text-blue-500 mb-1">Leadership & Values</p>
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Meet Our Founders</h2>
         </div>
-        <div className='w-full'>
+        <div className='w-full flex flex-col gap-8'>
           {doctors.map((doctor, index) => (
             <DoctorProfile key={index} {...doctor} />
           ))}
         </div>
       </section>
-      <section className='w-full flex flex-col gap-8 md:px-24 lg:px-32'>
+      <section className='w-full flex flex-col gap-8 px-4 md:px-24 lg:px-32'>
         <div className="w-full">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Key Administrators</h2>
         </div>
-        <div className='flex justify-between gap-5'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
 
           {
             doctors.map((doctor, index) => {
@@ -124,11 +124,11 @@ export const Leadership = () => {
 
         </div>
       </section>
-      <section className='w-full flex flex-col gap-8 md:px-24 lg:px-32 pb-24'>
+      <section className='w-full flex flex-col gap-8 px-4 md:px-24 lg:px-32 pb-24'>
         <div className="w-full">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Core Values</h2>
         </div>
-        <div className='grid grid-cols-3 grid-rows-1 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-3 md:grid-rows-1 gap-4'>
           <button className="flex items-center justify-between px-4 py-4 bg-white border-[2px] border-ligthGrey rounded-lg cursor-pointer transition-all duration-300 hover:bg-gray-200">
             <span className="flex flex-col items-start gap-2 pr-16">
               <img src="/handWithPlus.png" alt="hand with plus icon" className="w-8 h-8" />

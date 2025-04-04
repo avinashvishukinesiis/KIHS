@@ -2,8 +2,8 @@ import React from 'react'
 
 export const CareerSection5 = () => {
     return (
-        <section className='px-28 w-full'>
-            <div className='w-full min-h-[100px] bg-bgBlue rounded-2xl flex items-center justify-center pl-16'>
+        <section className='md:px-28 w-full -mt-24 md:mt-0'>
+            <div className='w-full min-h-[100px] bg-bgBlue md:rounded-2xl flex flex-col-reverse md:flex-row items-center justify-center gap-4 px-4 py-8 md:pl-16'>
                 <div className='flex flex-col gap-4'>
                     <div className='pr-28 flex flex-col gap-3'>
                         <h2 className='font-semibold text-4xl'>Internships and Volunteer Opportunities</h2>

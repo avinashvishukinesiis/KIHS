@@ -13,16 +13,16 @@ export const PvSection2 = () => {
   const [prevNavIndex, setPrevNavIndex] = useState<number>(0)
   const navRef = useRef<HTMLDivElement>(null)
 
-  type NavCategory = "Inpatient Services" | "Facilities for visitors" | "Support Services" | "InsuranceAndBilling"
+  type NavCategory = "Inpatient Services" | "Facilities for visitors" | "Support Services" | "Insurance And Billing"
 
-  const categories: NavCategory[] = ["Inpatient Services", "Facilities for visitors", "Support Services", "InsuranceAndBilling"]
+  const categories: NavCategory[] = ["Inpatient Services", "Facilities for visitors", "Support Services", "Insurance And Billing"]
 
   // Map each category to its corresponding component
   const navComponents: Record<NavCategory, React.ReactNode> = {
     "Inpatient Services": <InpatientServices />,
     "Facilities for visitors": <FacilitiesForVisitors />,
     "Support Services": <SupportServices />,
-    "InsuranceAndBilling": <InsuranceAndBilling />,
+    "Insurance And Billing": <InsuranceAndBilling />,
   }
 
   const handleNavClick = (category: NavCategory) => {

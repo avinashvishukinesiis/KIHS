@@ -32,7 +32,7 @@ export const AboutUs = () => {
 
   return (
     <main className="min-h-[70vh] w-full flex flex-col gap-4 sm:gap-8">
-      <div className="px-20 pt-20">
+      <div className="px-4 md:px-20 pt-20">
         <div className="h-max w-full pb-4 sm:pb-8 flex flex-col gap-4 sm:gap-8 border-b-[2px] border-ligthGrey">
           <div className="w-full relative">
             <div
