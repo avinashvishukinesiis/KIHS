@@ -34,7 +34,7 @@ export const CareerSection2 = () => {
                     {contentItem.map(({ title, description }, index) => {
                         return (
                             <button key={index} className="flex items-center justify-between px-4 py-2 bg-white border-[2px] border-ligthGrey rounded-lg cursor-pointer transition-all duration-300 hover:bg-gray-200">
-                                <span className="flex items-center gap-8 pr-16">
+                                <span className="flex items-center gap-8 md:pr-16">
                                     <img src="/handWithPlus.png" alt="hand with plus icon" className="w-12 h-12" />
                                     <div className='flex flex-col items-start gap-1'>
                                         <span className='text-[16px] font-semibold'>{title}</span>
