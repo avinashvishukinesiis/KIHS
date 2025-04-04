@@ -38,7 +38,7 @@ export const Footer = () => {
         },
         {
             label: "Testimonials",
-            url: "/testimonials"
+            url: "/#testimonial"
         },
         {
             label: "Contact Us",

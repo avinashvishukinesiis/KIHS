@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Section6 = () => {
   return (
-    <section>
+    <section id='testimonial'>
         <TestimonialCarousel />
     </section>
   )

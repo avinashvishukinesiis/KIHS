@@ -13,7 +13,7 @@ export const ContactUsSection1 = () => {
         },
       ]
     return (
-        <section className='w-full h-max md:h-[70vh] bg-white flex items-center relative box-border'>
+        <section className='w-full h-max md:h-[70vh] bg-white pb-6 flex items-center relative box-border'>
             <div className='hidden md:block w-max h-max'>
                 <img className='h-[70vh]' src="/contactus-building.png" alt="Picture of the building" />
             </div>
