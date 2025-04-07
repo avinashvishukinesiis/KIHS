@@ -28,7 +28,7 @@ export default function Navbar() {
         { href: "/medical-services", label: "Medical Services" },
         { href: "/patients-and-visitors", label: "Patients & Visitors" },
         { href: "/dr-dept", label: "Doctors & Dept" },
-        { href: "/career", label: "Career Opportunities" },
+        { href: "/academics", label: "Academics" },
     ]
 
     return (
@@ -50,9 +50,7 @@ export default function Navbar() {
                         <PiSirenThin className="text-white" size={24} />
                         <span>24x7 Helpline</span>
                         <div className="flex gap-2 font-semibold">
-                            <span>022 1234 1234</span>
-                             <span>/</span>
-                             <span>022 1234 1234</span>
+                            <a href="tel:0233-2305329">0233-2305329</a>
                         </div>
             </div>
             <div className="w-full mx-auto px-8 py-2">

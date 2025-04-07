@@ -4,7 +4,7 @@ import { CareerSection2 } from './CareerSection2/CareerSection2'
 import { CareerSection3 } from './CareerSection3/CareerSection3'
 import { CareerSection4 } from './CareerSection4/CareerSection4'
 import { CareerSection5 } from './CareerSection5/CareerSection5'
-import { CareerSection6 } from './CareerSection6/CareerSection6'
+// import { CareerSection6 } from './CareerSection6/CareerSection6'
 
 export const Career = () => {
   return (
@@ -14,7 +14,7 @@ export const Career = () => {
         <CareerSection3/>
         <CareerSection4/>
         <CareerSection5/>
-        <CareerSection6/>
+        {/* <CareerSection6/> */}
     </main>
   )
 }

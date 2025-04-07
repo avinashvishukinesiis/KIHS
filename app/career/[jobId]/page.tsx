@@ -23,7 +23,7 @@ export default function JobProfile() {
     ];
     return (
         <main className='w-full min-h-[70vh] flex flex-col gap-24'>
-            <section className='w-full h-full px-4 md:py-20 md:px-24 lg:px-32 gap-12'>
+            <section className='w-full h-full px-4 md:pt-20 md:px-24 lg:px-32 gap-12'>
                 <div>
                     <p className="text-sm text-blue-500 mb-1">Careers at Kullolli Institute of Health Services (KIHS)</p>
                     <h2 className="text-2xl sm:text-3xl font-semibold mb-4">Medical Officer</h2>
@@ -67,7 +67,7 @@ export default function JobProfile() {
                                     <span className="flex items-center gap-8 pr-16">
                                         <img src="/handWithPlus.png" alt="hand with plus icon" className="w-12 h-12" />
                                         <div className='flex flex-col items-start gap-1'>
-                                            <span className='text-[16px] font-semibold'>{expectation}</span>
+                                            <span className='text-[16px] font-semibold text-left'>{expectation}</span>
                                         </div>
                                     </span>
                                 </button>

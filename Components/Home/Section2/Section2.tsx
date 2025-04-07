@@ -3,33 +3,38 @@ import React from 'react'
 
 
 
-
 export const Section2 = () => {
 
   const data = [
     {
       label:"Medical Services",
       icon: "/handWithPlus.png",
+      url:"/medical-services"
     },
     {
       label:"Patient Facilities",
       icon: "/patientVector.png",
+      url:" "
     },
     {
       label:"Book Appointment",
       icon: "/calendar.png",
+      url:" "
     },
     {
       label:"OPD Details",
       icon: "/OpdVector.png",
+      url:" "
     },
     {
       label:"Insurance & Billing",
       icon: "/billCard.png",
+      url:" "
     },
     {
       label:"Doctors & Departments",
       icon: "/health-check.png",
+      url:" "
     },
   ]
 
@@ -44,7 +49,8 @@ export const Section2 = () => {
             {
               data.map((item,index)=>{
                 return(
-                  <ServiceButton key={index} label={item.label} icon={item.icon} />
+               
+                  <ServiceButton key={index} label={item.label} icon={item.icon} url={item.url}/>
                 )
               })
             }

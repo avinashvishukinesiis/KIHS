@@ -13,15 +13,16 @@ export const AboutUs = () => {
   const [prevNavIndex, setPrevNavIndex] = useState<number>(0)
   const navRef = useRef<HTMLDivElement>(null)
 
-  type NavCategory = "Our Journey" | "Vision & Mission" | "Leadership & Value" | "State-of-the-Art Healthcare"
+  type NavCategory = "Our Journey" | "Vision & Mission" | "Leadership & Value" | "Service Standards" | "State-of-the-Art Healthcare"
 
-  const categories: NavCategory[] = ["Our Journey", "Vision & Mission", "Leadership & Value", "State-of-the-Art Healthcare"]
+  const categories: NavCategory[] = ["Our Journey", "Vision & Mission", "Leadership & Value", "Service Standards" , "State-of-the-Art Healthcare"]
 
   // Map each category to its corresponding component
   const navComponents: Record<NavCategory, React.ReactNode> = {
     "Our Journey": <OurJourney />,
     "Vision & Mission": <VisionMission />,
     "Leadership & Value": <Leadership />,
+    "Service Standards": <VisionMission />,
     "State-of-the-Art Healthcare": <StateOfTheArtHealthcare />,
   }
 

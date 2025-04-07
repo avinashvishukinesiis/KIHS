@@ -205,10 +205,10 @@ export const Footer = () => {
                     <div className="md:order-3">
                         <h3 className="text-[16px] font-semibold mb-2">Address</h3>
                         <address className="not-italic text-[14px] text-gray-700 space-y-1">
-                            <p>123 Dental Avenue</p>
-                            <p>City ville, State 12345</p>
-                            <p>United States</p>
-                            <Link href="https://maps.google.com" target='_blank' className="underline block mt-2">
+                          
+                            <p>‘C’ Road, Raghunandan Colony,</p>
+                            <p>Vishrambag, Sangli – 416415</p>
+                            <Link href="https://maps.app.goo.gl/B8Q7nJ2v2Gm9Nh7q6" target='_blank' className="underline block mt-2 py-1">
                                 View on Maps
                             </Link>
                         </address>

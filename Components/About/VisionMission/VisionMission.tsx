@@ -8,7 +8,7 @@ export const VisionMission = () => {
       <section className='w-full min-h-[200px] flex flex-col md:flex-row justify-around gap-8 md:gap-20 md:items-center bg-secondaryTint p-4 md:px-24 lg:px-32 mt-16'>
         <div className='flex flex-col'>
           <p className="text-sm text-blue-500 mb-1">Our Vision</p>
-          <h2 className='text-[40px] font-semibold leading-11'><span className='text-nowrap'>Affordable Quality</span> <br /><span className='text-primary1'>Health for All</span></h2>
+          <h2 className='text-[30px] md:text-[40px] font-semibold leading-11'><span className='text-nowrap'>Affordable Quality</span> <br /><span className='text-primary1'>Health for All</span></h2>
         </div>
         <div className='w-full lg:w-1/2 flex flex-col items-center md:self-start md:pr-20 lg:pr-40 md:pt-14 md:gap-8'>
           <p className="text-customGrey text-[14px] mt-6 md:pr-20">This motto drives our mission to deliver high-quality, affordable medical care to everyone, regardless of their socioeconomic background.</p>
