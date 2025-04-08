@@ -7,6 +7,7 @@ import { formatDate } from "@/libs/utils"
 
 // This would be replaced with a Sanity client fetch in a real implementation
 async function getBlogPost(slug: string) {
+    console.log(slug)
     // Mock data for demonstration
     return {
         _id: "1",
