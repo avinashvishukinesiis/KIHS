@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Navbar from "@/Components/NavBar/NavBar";
-import { Footer } from "@/Components/Footer/Footer";
-import MotionWrapper from "@/Components/MotionWrapper";
-
+import RootLayoutClient from "./RootLayoutClient";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -21,11 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} scrollbar-hide`}>
-        <Navbar />
-        <main className="h-max min-h-[200px] md:min-h-[500px] mt-[136px] box-border">
-          <MotionWrapper>{children}</MotionWrapper>
-        </main>
-        <Footer />
+        <RootLayoutClient>{children}</RootLayoutClient>
       </body>
     </html>
   );
