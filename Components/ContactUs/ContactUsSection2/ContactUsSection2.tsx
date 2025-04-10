@@ -81,16 +81,12 @@ export const ContactUsSection2 = () => {
                         <div className="rounded-lg overflow-hidden h-64 md:h-full w-full relative">
                             <div className="absolute inset-0 bg-gray-200">
                                 {/* This would be replaced with an actual map component */}
-                                <iframe
-                                    width="100%"
-                                    height="256"
-                                    frameBorder="0"
-                                    scrolling="no"
-                                    marginHeight={0}
-                                    marginWidth={0}
-                                    src="https://maps.google.com/maps?width=100%25&amp;height=256&amp;hl=en&amp;q=1%20Grafton%20Street,%20'C'%20Road,%20Raghunandan%20Colony,%20Vishrambag,%20Sangli%20%E2%80%93%20416415.Dublin,%20Ireland+(My%20BusinKULLOLLI%20HOSPITALess%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                                    allowFullScreen
-                                />
+                                <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.510757456498!2d74.59507957492201!3d16.8506100839479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc123592d81f72f%3A0x9e6bcab8173ef430!2sKullolli%20Institute%20of%20Health%20Services!5e0!3m2!1sen!2sin!4v1744273161413!5m2!1sen!2sin"
+                                 width="100%"
+                                 height="256" 
+                                 loading="lazy" 
+                                 referrerPolicy="no-referrer-when-downgrade"/>
                             </div>
                         </div>
                     </div>
