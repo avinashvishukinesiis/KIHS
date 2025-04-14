@@ -13,10 +13,8 @@ function DepaofUrEndo() {
       <div className="w-full lg:w-1/2 flex flex-col md:self-start md:pr-20 lg:pr-40 md:pt-14 md:gap-8">
         <div>
           <h2 className="text-2xl sm:text-3xl font-bold">
-            1.Department of Urology & Endo
-          </h2>
-          <p className="text-2xl sm:text-3xl font-bold">urology</p>
-
+            3.Department of Urology & Endo <br />  urology
+          </h2> 
           <ul className="list-disc pl-10 space-y-1 text-customGrey text-xs sm:text-sm md:text-[14px] mb-6">
             <li>Complete Stone Care Clinic</li>
             <li>Advanced Endourology Center (PCNL, URSL, TURP, RIRS)</li>
