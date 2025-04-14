@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { OurJourney } from "./OurJourney/OurJourney";
 import { VisionMission } from "./VisionMission/VisionMission";
 import { Leadership } from "./Leadership/Leadership";
-import ServiceStandards from "../ServiceStandards/ServiceStandards";
+import ServiceStandards from "./ServiceStandards/ServiceStandards";
 import { StateOfTheArtHealthcare } from "./State-of-the-Art Healthcare/State-of-the-Art Healthcare";
 
 export const AboutUs = () => {

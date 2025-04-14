@@ -125,10 +125,10 @@ const services = [
 
 export default function ServiceStandards() {
   return (
-    <div className="px-9 md:px-20 py-10 max-w-8xl mx-auto">
+    <div className="px-9 md:px-20 py-10 max-w-7xl mx-auto">
       <div className="mb-10">
         <p className="text-sm text-blue-600 font-semibold">Service Standards</p>
-        <h2 className="text-3xl md:text-5xl font-bold mt-1">
+        <h2 className="text-3xl md:text-4xl font-bold mt-1">
           Quick Glance at Our Service Standards
         </h2>
       </div>
