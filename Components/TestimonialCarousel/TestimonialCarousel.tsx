@@ -1,48 +1,59 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import Image from "next/image"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { Testimonial } from "@/libs/types"
 
-type Testimonial = {
-  id: number
-  quote: string
-  name: string
-  title: string
-  avatar: string
-}
+// type Testimonial = {
+//   id: number
+//   quote: string
+//   name: string
+//   title: string
+//   avatar: string
+// }
 
-export default function TestimonialCarousel() {
-  const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      quote:
-        "In an emergency situation, I was amazed by how quickly they accommodated me. The dentist's skill and compassion were evident. I'm grateful for their prompt care.",
-      name: "Rohit Sharma",
-      title: "Cardiology Patient",
-      avatar: "/testi.png",
-    },
-    {
-      id: 2,
-      quote:
-        "The level of professionalism and care I received was outstanding. The staff made me feel comfortable throughout my entire treatment.",
-      name: "Sarah Johnson",
-      title: "Dental Patient",
-      avatar: "/testi.png",
-    },
-    {
-      id: 3,
-      quote:
-        "I've been a patient for years and have always received exceptional care. The doctors take time to listen and explain everything thoroughly.",
-      name: "Michael Chen",
-      title: "Family Medicine Patient",
-      avatar: "/testi.png",
-    },
-  ]
+export default function TestimonialCarousel({ testimonials }: { testimonials: Testimonial[] }) {
+  // const testimonials: Testimonial[] = [
+  //   {
+  //     id: 1,
+  //     quote:
+  //       "In an emergency situation, I was amazed by how quickly they accommodated me. The dentist's skill and compassion were evident. I'm grateful for their prompt care.",
+  //     name: "Rohit Sharma",
+  //     title: "Cardiology Patient",
+  //     avatar: "/testi.png",
+  //   },
+  //   {
+  //     id: 2,
+  //     quote:
+  //       "The level of professionalism and care I received was outstanding. The staff made me feel comfortable throughout my entire treatment.",
+  //     name: "Sarah Johnson",
+  //     title: "Dental Patient",
+  //     avatar: "/testi.png",
+  //   },
+  //   {
+  //     id: 3,
+  //     quote:
+  //       "I've been a patient for years and have always received exceptional care. The doctors take time to listen and explain everything thoroughly.",
+  //     name: "Michael Chen",
+  //     title: "Family Medicine Patient",
+  //     avatar: "/testi.png",
+  //   },
+  // ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState(0) // -1 for left, 1 for right
+
+  const goToNext = useCallback(() => {
+    setDirection(-1)
+    setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1))
+  }, [testimonials.length])
+
+  const goToPrevious = useCallback(() => {
+    setDirection(1)
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1))
+  }, [testimonials.length])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,17 +61,7 @@ export default function TestimonialCarousel() {
     }, 5000) // Auto-slide every 5 seconds
 
     return () => clearInterval(interval) // Cleanup function to clear interval
-  }, [currentIndex])
-
-  const goToPrevious = () => {
-    setDirection(1)
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1))
-  }
-
-  const goToNext = () => {
-    setDirection(-1)
-    setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1))
-  }
+  }, [goToNext]) // Fixed dependency array
 
   // Variants for animations
   const slideVariants = {

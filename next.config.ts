@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     viewTransition: true,
   },
   images: {
-    domains: ["via.placeholder.com"],
+    domains: ["via.placeholder.com","cdn.sanity.io"],
   },
 };
 
