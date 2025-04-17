@@ -94,35 +94,33 @@ function Section3() {
           </div>
         </div>
       </div>
-      <div className="w-full mx-18 px-4 md:px-16 mt-8 mb-20">
-        <div className="flex flex-col md:flex-row justify-between gap-8">
-          {/* How to Register */}
-          <div className="flex-1">
-            <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-              How to Register
-            </h3>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>– Complete our online registration form</li>
-              <li>
-                – Email:{" "}
-                <a
-                  href="mailto:academics@kiih.edu"
-                  className="text-blue-600 underline"
-                >
-                  academics@kiih.edu
-                </a>
-              </li>
-              <li>– Phone registration available</li>
-            </ul>
-          </div>
+      <div className="grid md:grid-cols-2 gap-6 px-25 mb-10">
+        {/* How to Register */}
+        <div className="flex-1">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-4">
+            How to Register
+          </h3>
+          <ul className="text-sm text-gray-600 space-y-1">
+            <li>– Complete our online registration form</li>
+            <li>
+              – Email:{" "}
+              <a
+                href="mailto:academics@kiih.edu"
+                className="text-blue-600 underline"
+              >
+                academics@kiih.edu
+              </a>
+            </li>
+            <li>– Phone registration available</li>
+          </ul>
+        </div>
 
-          {/* Enrolment Deadline */}
-          <div className="flex-1">
-            <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-              Enrolment Deadline
-            </h3>
-            <p className="text-sm text-gray-600">– Current batch: XXYY202X</p>
-          </div>
+        {/* Enrolment Deadline */}
+        <div className="flex-1">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-4">
+            Enrolment Deadline
+          </h3>
+          <p className="text-sm text-gray-600">– Current batch: XXYY202X</p>
         </div>
       </div>
     </div>

@@ -21,7 +21,6 @@ export const Departments = () => {
   const handleImageClick = () => {
     router.push("/doctor-details");
   };
-  const imgItem = ["/doct_cart.png", "/build_cart.png", "/doct_lady.png"];
   const doctors: {
     name: string;
     title: string;

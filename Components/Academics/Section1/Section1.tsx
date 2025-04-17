@@ -3,14 +3,14 @@ import React from "react";
 function Section1() {
   return (
     <div>
-      <div className="flex flex-col-reverse md:flex-row items-center justify-around px-4 md:px-16 lg:px-24 py-12 gap-8 md:gap-16 w-full border-t mt-16">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-around px-4 md:px-16 lg:px-24 py-12 gap-8 md:gap-16 w-full  mt-16">
         {/* Text Section */}
         <div className="w-full md:w-1/2 flex flex-col md:items-start">
           <a href="#" className="text-sm text-blue-500 hover:underline mb-2">
             Laparoscopic Surgical Training Programs
           </a>
           <h2 className="text-3xl sm:text-5xl font-bold mb-4 ">
-            Academic Training <br className="hidden sm:block" />
+            Academic Training <br />
             Programs at KIHS
           </h2>
           <h3 className="text-black text-2xl font-semibold mb-2">
