@@ -73,9 +73,136 @@ export interface Author {
   }
 
   export interface Testimonial {
-    _id: string
+    _id: string;
     quote: string;
     name: string;
     title: string;
     avatar: string;
+  }
+
+
+  
+  export interface AboutUsProps{
+    data:
+    {
+      ourJourney : OurJourneyProps;
+      visionMission: VisionMissionProps;
+      leadership: LeadershipProps;
+      serviceStandards: ServiceProps;
+      stateOfTheArt:StateOfTheArtProps;
+   }
+  }
+
+
+  
+  export interface  OurJourneyProps {
+      mainImage?: { asset: { _ref: string } }
+      nabhImage?: { asset: { _ref: string } }
+      stats?: Stat[]
+      aboutTitle: string
+      aboutDescription: string
+      historyTitle: string
+      historyDescription: string
+  }
+
+  export interface  Stat  {
+    title: string;
+    subtitle: string;
+  }
+
+  export interface VisionMissionProps{
+      visionTitle: string
+      visionDescription: string
+      missionTitle: string
+      missionStatements: string[]
+      commitmentTitle: string
+      commitmentDescription: string
+      commitmentImage?: {
+        asset: {
+          _ref: string
+          url: string
+        }
+      }
+  }
+
+
+  export interface SocialLink {
+    icon: 'facebook' | 'twitter' | 'linkedin'
+    url: string
+  }
+  
+  export interface Doctor{
+    name: string
+    title: string
+    subTitle: string
+    description?: string
+    image: { asset: { _ref: string } }
+    socialLinks: SocialLink[]
+  }
+  
+  export interface CoreValue {
+    title: string
+    description: string
+    icon: { asset: { _ref: string } }
+  }
+  
+  export interface LeadershipProps{
+      founders: Doctor[]
+      administrators: Doctor[]
+      coreValues: CoreValue[]
+  }
+
+
+  export interface Standard{
+    title: string
+    description: string
+    image: {
+      asset: {
+        _ref: string
+      }
+    }
+  }
+  
+  export interface ServiceProps{
+      sectionTitle: string
+      sectionSubtitle: string
+      standards: Standard[]
+  }
+
+  export interface Feature{
+    text: string
+    listItems?: string[]
+  }
+  
+  export interface Section{
+    title: string
+    subtitle?: string
+    image: { asset: { _ref: string } }
+    features: Feature[]
+  }
+  
+  export interface StateOfTheArtProps{
+      facilities: Section
+      patientCare: Section
+      bulletIcon :{
+        asset: {
+          _ref: string
+        }
+      }
+  }
+
+
+  export interface LinkItem{
+    label: string
+    url: string
+  }
+  
+  export interface FooterData{
+    logo?: { asset: { _ref: string } }
+    companyLinks: LinkItem[]
+    pagesLinks: LinkItem[]
+    address: string[]
+    mapUrl: string
+    inquiries: { phone: string; email: string }
+    socialLinks: { label: string; url: string; icon: { asset: { _ref: string } } }[]
   }
