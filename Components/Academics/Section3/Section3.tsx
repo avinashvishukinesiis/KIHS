@@ -51,7 +51,7 @@ function Section3() {
         </div>
       </div>
       <div className="w-full px-6 md:px-24 mt-8">
-        <div className="bg-yellow-100 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="bg-secondaryTint rounded-2xl p-6 flex flex-col md:flex-row justify-between items-center">
           {/* Text */}
           <div className="flex-1">
             <h3 className="text-lg font-semibold mb-2">Certification</h3>
@@ -94,7 +94,7 @@ function Section3() {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-6 px-25 mb-10">
+      <div className="grid md:grid-cols-2 gap-6 px-25 mb-15">
         {/* How to Register */}
         <div className="flex-1">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
