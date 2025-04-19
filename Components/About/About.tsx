@@ -8,8 +8,10 @@ import { VisionMission } from "./VisionMission/VisionMission";
 import { Leadership } from "./Leadership/Leadership";
 import ServiceStandards from "./ServiceStandards/ServiceStandards";
 import { StateOfTheArtHealthcare } from "./State-of-the-Art Healthcare/State-of-the-Art Healthcare";
+import { AboutUsProps } from "@/libs/types";
 
-export const AboutUs = () => {
+export const AboutUs = ({data}: AboutUsProps) => {
+  console.log(data)
   const [navSelected, setNavSelected] = useState<NavCategory>("Our Journey");
   const [prevNavIndex, setPrevNavIndex] = useState<number>(0);
   const navRef = useRef<HTMLDivElement>(null);
@@ -31,11 +33,11 @@ export const AboutUs = () => {
 
   // Map each category to its corresponding component
   const navComponents: Record<NavCategory, React.ReactNode> = {
-    "Our Journey": <OurJourney />,
-    "Vision & Mission": <VisionMission />,
-    "Leadership & Value": <Leadership />,
-    "Service Standards": <ServiceStandards />,
-    "State-of-the-Art Healthcare": <StateOfTheArtHealthcare />,
+    "Our Journey": <OurJourney data={data.ourJourney} />,
+    "Vision & Mission": <VisionMission data={data.visionMission} />,
+    "Leadership & Value": <Leadership data={data.leadership} />,
+    "Service Standards": <ServiceStandards data={data.serviceStandards} />,
+    "State-of-the-Art Healthcare": <StateOfTheArtHealthcare data={data.stateOfTheArt} />,
   };
 
   const handleNavClick = (category: NavCategory) => {

@@ -22,6 +22,11 @@ export const homeType = defineType({
       type: 'section3'
     }),
     defineField({
+      name: 'aboutKihs',
+      title: 'About KIHS',
+      type: 'aboutKihs'
+    }),
+    defineField({
       name: 'testimonials',
       title: 'Testimonials',
       type: 'array',
