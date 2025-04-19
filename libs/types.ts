@@ -72,6 +72,22 @@ export interface Author {
     tabs: Tab[];
   }
 
+  export interface Button {
+    label: string;
+    primary?: boolean;
+    link?: string;
+  }
+  
+  export interface Section4Props {
+      subtitle?: string;
+      title: string;
+      description: string;
+      image: { asset: { _ref: string } };
+      imageAlt: string;
+      imagePosition: "left" | "right";
+      buttons?: Button[];
+  }
+
   export interface Testimonial {
     _id: string;
     quote: string;

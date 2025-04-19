@@ -12,6 +12,7 @@ import { leadershipType } from './AboutUsSchema/leadershipValue'
 import { serviceStandardsType } from './AboutUsSchema/serviceStandardsTypes'
 import { stateOfTheArtType } from './AboutUsSchema/stateOfTheArt'
 import { footerType } from './FooterSchema/FooterTypes'
+import { aboutKihsType } from './HomePageSchema/section4'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -21,6 +22,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     section1Type,
     section2Type,
     section3Type,
+    aboutKihsType,
     testimonialType,
     aboutUsType,
     ourJourneyType,

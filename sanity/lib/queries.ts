@@ -5,6 +5,23 @@ export const homePageQuery = `
     section1,
     section2,
     section3,
+    aboutKihs {
+      subtitle,
+      title,
+      description,
+      image {
+        asset -> {
+          url
+        }
+      },
+      imageAlt,
+      imagePosition,
+      buttons[] {
+        label,
+        primary,
+        link
+      }
+    },
     testimonials[]->{
       _id,
       quote,

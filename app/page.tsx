@@ -15,7 +15,7 @@ export default async function Home() {
       <Section1 data={data?.section1}/>
       <Section2 data={data?.section2}/>
       <Section3 data={data?.section3}/>
-      <Section4/>
+      <Section4 data={data?.aboutKihs}/>
       {/* <Section5/> */}
       <Section6 data={data?.testimonials}/>
     </>
