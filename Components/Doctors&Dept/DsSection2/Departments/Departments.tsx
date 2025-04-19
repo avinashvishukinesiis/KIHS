@@ -1,5 +1,8 @@
+"use client";
+
 import React, { useEffect } from "react";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 type SocialLink = {
   icon: "facebook" | "twitter" | "linkedin";
@@ -13,7 +16,11 @@ const iconComponents = {
 };
 
 export const Departments = () => {
-  const imgItem = ["/doct_cart.png", "/build_cart.png", "/doct_lady.png"];
+  const router = useRouter();
+
+  const handleImageClick = () => {
+    router.push("/doctor-details");
+  };
   const doctors: {
     name: string;
     title: string;
@@ -324,6 +331,7 @@ export const Departments = () => {
                       src={doctor.imageSrc || "/placeholder.svg"}
                       alt={`${doctor.name}`}
                       className="w-full h-full object-cover"
+                      onClick={handleImageClick}
                     />
                   </div>
                   <div className="p-4 flex flex-col gap-2">

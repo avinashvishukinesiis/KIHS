@@ -5,7 +5,8 @@ import { Facebook, Twitter, Linkedin } from "lucide-react";
 interface DoctorProfileProps {
     name: string;
     title: string;
-    description: string;
+    subTitle:string;
+    description: string | undefined;
     imageSrc: string;
     socialLinks: { icon: "facebook" | "twitter" | "linkedin"; url: string }[];
 }

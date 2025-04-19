@@ -1,35 +1,49 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useState, useRef } from "react"
-import { AnimatePresence, motion } from "framer-motion"
-import { OurJourney } from "./OurJourney/OurJourney"
-import { VisionMission } from "./VisionMission/VisionMission"
-import { Leadership } from "./Leadership/Leadership"
-import { StateOfTheArtHealthcare } from "./State-of-the-Art Healthcare/State-of-the-Art Healthcare"
+import type React from "react";
+import { useState, useRef } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { OurJourney } from "./OurJourney/OurJourney";
+import { VisionMission } from "./VisionMission/VisionMission";
+import { Leadership } from "./Leadership/Leadership";
+import ServiceStandards from "./ServiceStandards/ServiceStandards";
+import { StateOfTheArtHealthcare } from "./State-of-the-Art Healthcare/State-of-the-Art Healthcare";
+import { AboutUsProps } from "@/libs/types";
 
-export const AboutUs = () => {
-  const [navSelected, setNavSelected] = useState<NavCategory>("Our Journey")
-  const [prevNavIndex, setPrevNavIndex] = useState<number>(0)
-  const navRef = useRef<HTMLDivElement>(null)
+export const AboutUs = ({data}: AboutUsProps) => {
+  console.log(data)
+  const [navSelected, setNavSelected] = useState<NavCategory>("Our Journey");
+  const [prevNavIndex, setPrevNavIndex] = useState<number>(0);
+  const navRef = useRef<HTMLDivElement>(null);
 
-  type NavCategory = "Our Journey" | "Vision & Mission" | "Leadership & Value" | "Service Standards" | "State-of-the-Art Healthcare"
+  type NavCategory =
+    | "Our Journey"
+    | "Vision & Mission"
+    | "Leadership & Value"
+    | "Service Standards"
+    | "State-of-the-Art Healthcare";
 
-  const categories: NavCategory[] = ["Our Journey", "Vision & Mission", "Leadership & Value", "Service Standards" , "State-of-the-Art Healthcare"]
+  const categories: NavCategory[] = [
+    "Our Journey",
+    "Vision & Mission",
+    "Leadership & Value",
+    "Service Standards",
+    "State-of-the-Art Healthcare",
+  ];
 
   // Map each category to its corresponding component
   const navComponents: Record<NavCategory, React.ReactNode> = {
-    "Our Journey": <OurJourney />,
-    "Vision & Mission": <VisionMission />,
-    "Leadership & Value": <Leadership />,
-    "Service Standards": <VisionMission />,
-    "State-of-the-Art Healthcare": <StateOfTheArtHealthcare />,
-  }
+    "Our Journey": <OurJourney data={data.ourJourney} />,
+    "Vision & Mission": <VisionMission data={data.visionMission} />,
+    "Leadership & Value": <Leadership data={data.leadership} />,
+    "Service Standards": <ServiceStandards data={data.serviceStandards} />,
+    "State-of-the-Art Healthcare": <StateOfTheArtHealthcare data={data.stateOfTheArt} />,
+  };
 
   const handleNavClick = (category: NavCategory) => {
-    setPrevNavIndex(categories.indexOf(navSelected))
-    setNavSelected(category)
-  }
+    setPrevNavIndex(categories.indexOf(navSelected));
+    setNavSelected(category);
+  };
 
   return (
     <main className="min-h-[70vh] w-full flex flex-col gap-4 sm:gap-8">
@@ -54,7 +68,9 @@ export const AboutUs = () => {
                   >
                     <span
                       className={`text-xs sm:text-sm md:text-[14px] whitespace-nowrap ${
-                        navSelected === category ? "text-primary1" : "text-textGrey"
+                        navSelected === category
+                          ? "text-primary1"
+                          : "text-textGrey"
                       } select-none text-center`}
                     >
                       {category}
@@ -76,7 +92,10 @@ export const AboutUs = () => {
                 x: prevNavIndex < categories.indexOf(navSelected) ? 100 : -100,
               }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: prevNavIndex < categories.indexOf(navSelected) ? -100 : 100 }}
+              exit={{
+                opacity: 0,
+                x: prevNavIndex < categories.indexOf(navSelected) ? -100 : 100,
+              }}
               transition={{ duration: 0.5 }}
               className="flex flex-col gap-24"
             >
@@ -86,5 +105,5 @@ export const AboutUs = () => {
         </div>
       </AnimatePresence>
     </main>
-  )
-}
+  );
+};

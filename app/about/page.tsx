@@ -1,13 +1,17 @@
 import { AboutUs } from "@/Components/About/About";
+import { aboutUsPageQuery } from "@/sanity/lib/queries";
+import { client } from "@/sanity/sanity-utils";
 
 
-export default function About() {
+export default async function About() {
 
-    return (
-      <>
-         <AboutUs/>
-      </>
-    )
-  }
-  
-  
+  const data = await client.fetch(aboutUsPageQuery)
+  console.log("sanity data about us", data)
+
+  return (
+    <>
+      <AboutUs data={data} />
+    </>
+  )
+}
+
