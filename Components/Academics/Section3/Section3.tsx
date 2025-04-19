@@ -85,7 +85,7 @@ function Section3() {
         <div className="w-full lg:w-1/2 flex flex-col md:self-start md:pr-20 lg:pr-40 md:pt-14 md:gap-8">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">Eligibility</h2>
-            <p className="list-disc pl-6 space-y-1 text-customGrey text-xs sm:text-sm md:text-[14px] mb-4">
+            <p className="list-disc  space-y-1 text-customGrey text-xs sm:text-sm md:text-[14px] mb-4">
               <p>-Qualified Gynaecologists with</p>
               <p>DGO</p>
               <p>DNB</p>
@@ -94,7 +94,7 @@ function Section3() {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-6 px-25 mb-15">
+      <div className="grid md:grid-cols-2 gap-6 px-4 md:px-25 mb-15">
         {/* How to Register */}
         <div className="flex-1">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">

@@ -32,8 +32,8 @@ function Section1() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 px-20">
-        <div className="p-6 border border-customGrey rounded-xl shadow-md flex flex-col gap-2">
+      <div className="grid md:grid-cols-2 gap-6 px-4 md:px-20">
+        <div className="p-6 border border-outlineGrey rounded-xl shadow-md flex flex-col gap-2">
           <img
             src="/handWithPlus.png"
             alt="Gynaecology Doctors"
@@ -48,7 +48,7 @@ function Section1() {
             <li>6 months</li>
           </ul>
         </div>
-        <div className="p-6 border border-customGrey rounded-xl shadow-md flex flex-col gap-2">
+        <div className="p-6 border border-outlineGrey rounded-xl shadow-md flex flex-col gap-2">
           <img
             src="/handWithPlus.png"
             alt="Gynaecology Doctors"

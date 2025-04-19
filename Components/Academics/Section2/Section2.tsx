@@ -68,7 +68,7 @@ function Section2() {
           </h2>
         </div>
         {/* Scrollable container with custom scrollbar */}
-        <div className="relative w-[70vw] md:w-[80vw]">
+        <div className="relative w-full px-4 md:w-[80vw]">
           <div
             id="doctors-carousel"
             className="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent"
@@ -120,7 +120,7 @@ function Section2() {
           </div>
 
           {/* Mobile scroll indicator */}
-          <div className="flex justify-center mt-4 md:hidden">
+          {/* <div className="flex justify-center mt-4 md:hidden">
             <div className="flex gap-1">
               {doctors3.slice(0, Math.min(doctors3.length, 5)).map((_, idx) => (
                 <div
@@ -131,7 +131,7 @@ function Section2() {
                 ></div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
