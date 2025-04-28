@@ -132,3 +132,97 @@ export const footerQuery = `
     }
   }
   `
+
+  export const contactUsQuery = `
+  *[_type == "contactus"][0]{
+    contactUsSection1{
+    title,
+    subtitle,
+    "desktopImage": desktopImage.asset->url,
+    "mobileImage": mobileImage.asset->url,
+    contacts[]{
+      label,
+      "icon": icon.asset->url
+    },
+
+   },
+    contactUsSection2 {
+    introText,
+    heading,
+    emergencySection {
+      title,
+      emergencyContacts[] {
+        label,
+        number
+      }
+    },
+    locationTitle,
+    address,
+    landmarkHeading,
+    landmarks,
+    mobileDescriptionTitle,
+    mobileDescriptionParagraphs,
+    mapEmbedUrl
+  },
+  contactUsSection3 {
+    images[] {
+      asset->{
+        _id,
+        url
+      }
+    }
+  },
+  contactUsSection4 {
+      getInTouchTitle,
+      getInTouchDescription,
+      contactDetails[] {
+        label,
+        numbers,
+        ext
+      },
+      hospitalHoursTitle,
+      hospitalHoursDescription,
+      hospitalHourList,
+      emergencyTitle,
+      emergencyDescription,
+      emergencyNumbers,
+      connectTitle,
+      connectDescription,
+      socialLinks[] {
+        label,
+        linkText,
+        url
+      }
+    },
+    contactUsSection5 {
+      adminContacts[] {
+        department,
+        name,
+        email
+      }
+    },
+    contactUsSection6 {
+        title,
+        description
+    },
+    contactUsSection7 {
+       title,
+       description,
+       email,
+       phoneNumbers,
+       extensionNote,
+       bottomText,
+       image {
+         asset -> { url }
+       }
+     },
+     contactUsSection8 {
+        subtitle,
+        title,
+        servicesList,
+        submitButtonText,
+        successMessage,
+        errorMessage
+     }
+  }
+`

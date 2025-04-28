@@ -13,6 +13,15 @@ import { serviceStandardsType } from './AboutUsSchema/serviceStandardsTypes'
 import { stateOfTheArtType } from './AboutUsSchema/stateOfTheArt'
 import { footerType } from './FooterSchema/FooterTypes'
 import { aboutKihsType } from './HomePageSchema/section4'
+import { contactUsType } from './ContactUsSchema/contactUsTypes'
+import { contactUsSection1 } from './ContactUsSchema/contactUsSection1'
+import { contactUsSection2 } from './ContactUsSchema/contactUsSection2'
+import { contactUsSection3 } from './ContactUsSchema/contactUsSection3'
+import { contactUsSection4 } from './ContactUsSchema/contactUsSection4'
+import { contactUsSection5 } from './ContactUsSchema/contactUsSection5'
+import { contactUsSection6 } from './ContactUsSchema/contactUsSection6'
+import { contactUsSection7 } from './ContactUsSchema/contactUsSection7'
+import { contactUsSection8 } from './ContactUsSchema/contactUsSection8'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -30,5 +39,14 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     leadershipType,
     serviceStandardsType,
     stateOfTheArtType,
+    contactUsType,
+    contactUsSection1,
+    contactUsSection2,
+    contactUsSection3,
+    contactUsSection4,
+    contactUsSection5,
+    contactUsSection6,
+    contactUsSection7,
+    contactUsSection8
   ],
 }

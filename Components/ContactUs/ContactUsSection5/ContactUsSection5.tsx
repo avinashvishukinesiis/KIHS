@@ -1,21 +1,17 @@
-import React from "react";
+'use client'
+import React from 'react'
 
-const adminContacts = [
-  { department: "Chief Administrative Officer", name: "Dr. Mahadev Mali", email: "admin@kulollihealth.com" },
-  { department: "Quality Manager", name: "Dr. Simran Bagwan", email: "qualitycell@kulollihealth.com" },
-  { department: "Ophthalmology Administrator", name: "Mr. Pramod Vanjari", email: "-" },
-  { department: "Human Resource Manager", name: "Mr. Sachin Parit", email: "hr@kulollihealth.com" },
-  { department: "Account Department", name: "Mrs. Mahananda Kalyani", email: "accounts@kulollihealth.com" },
-  { department: "IT Head", name: "Mr. Suhas Kumbhar", email: "it@kulollihealth.com" },
-  { department: "Diagnostic Department", name: "Mrs. Padmavati Saijanshettar", email: "lab@kulollihealth.com" },
-  { department: "Clinical Record Department", name: "Mrs. Pradnya Chouknis", email: "care@kulollihealth.com" },
-  { department: "Cashless Department", name: "Miss. Revati Suryavanshi", email: "cashless@kulollihealth.com" },
-  { department: "Facility & Safety Maintenance", name: "Er. Tejas Awati", email: "-" },
-  { department: "Nursing Superintendent", name: "Mrs. Namita Patwardhan", email: "-" },
-  { department: "Procurement Head", name: "Ms. Rupali Yadav", email: "-" }
-];
+type AdminContact = {
+  department: string
+  name: string
+  email: string
+}
 
-export const ContactUsSection5 = () => {
+type ContactUsSection5Props = {
+  contacts: AdminContact[]
+}
+
+export const ContactUsSection5 = ({ contacts }: ContactUsSection5Props) => {
   return (
     <section className="overflow-x-auto p-4 md:p-16">
       <table className="min-w-full bg-white border border-gray-200 shadow-md rounded-lg overflow-hidden">
@@ -27,17 +23,17 @@ export const ContactUsSection5 = () => {
           </tr>
         </thead>
         <tbody>
-          {adminContacts.map((contact, index) => (
+          {contacts.map((contact, index) => (
             <tr key={index} className="border-b border-gray-200 hover:bg-gray-100">
               <td className="py-3 px-4">{contact.department}</td>
               <td className="py-3 px-4">{contact.name}</td>
               <td className="py-3 px-4 text-blue-500">
-                {contact.email !== "-" ? (
+                {contact.email && contact.email !== '-' ? (
                   <a href={`mailto:${contact.email}`} className="underline">
                     {contact.email}
                   </a>
                 ) : (
-                  "-"
+                  '-'
                 )}
               </td>
             </tr>
@@ -45,6 +41,5 @@ export const ContactUsSection5 = () => {
         </tbody>
       </table>
     </section>
-  );
-};
-
+  )
+}
